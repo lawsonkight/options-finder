@@ -45,6 +45,16 @@ main > figure {
   flex-direction: column;
   gap: 1rem;
   padding: 0 2rem;
+
+  fieldset {
+    border: none;
+    display: grid;
+
+    legend {
+      font-size: smaller;
+      text-transform: capitalize;
+    }
+  }
 }
 
 .multiThumb {
@@ -55,6 +65,7 @@ main > figure {
   display: block;
   min-width: 10rem;
   user-select: none;
+  border-radius: 0.25rem;
 
   data {
     border: 1px solid lightgray;
