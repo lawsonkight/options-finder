@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="color-scheme" content="light dark" />
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Hypercall options finder</h1>
+    </header>
+    <main>
+      <figure>
+        <figcaption>SP500 Call Leverage</figcaption>
+        <search>
+          <div id="filterControls">Loading&hellip;</div>
+          <small><em>double-click to reset</em></small>
+        </search>
+        <div id="chartYAxis">0</div>
+        <svg
+          id="chartSvg"
+          width="480"
+          height="480"
+          viewBox="0 0 480 480"
+          overflow="visible"
+          fill="currentColor"
+          fill-opacity="0.5"
+          stroke="currentColor"
+          stroke-opacity="0.5"
+          stroke-linecap="round"
+          preserveAspectRatio="none"
+          stroke-width="8"
+        ></svg>
+        <div></div>
+        <div></div>
+        <div id="chartXAxis">0</div>
+      </figure>
+      <section id="instrumentSection">
+        <header></header>
+        <ol>
+          Loading&hellip;
+        </ol>
+      </section>
+    </main>
+    <footer>Hypercall</footer>
+  </body>
+</html>

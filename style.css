@@ -1,0 +1,85 @@
+:root {
+  font-family: system-ui;
+  font-variant-numeric: tabular-nums;
+}
+
+body {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+main > figure {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: auto 1fr auto;
+  gap: 1rem;
+  margin: 0;
+
+  figcaption {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  small {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+#chartXAxis {
+  display: flex;
+  justify-content: space-between;
+}
+
+#chartYAxis {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+#filterControls {
+  min-width: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.multiThumb {
+  height: 1rem;
+  background: black;
+  display: flex;
+  position: relative;
+  display: block;
+  min-width: 10rem;
+  user-select: none;
+
+  data {
+    border: 1px solid lightgray;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    position: absolute;
+    border-radius: 0.125rem;
+    background: dimgray;
+
+    span {
+      font-size: x-small;
+      display: inline-block;
+      translate: 0 150%;
+    }
+
+    &:first-child {
+      border-start-start-radius: 0.875rem;
+
+      justify-content: end;
+      text-align: right;
+    }
+
+    &:last-child {
+      border-start-end-radius: 0.875rem;
+    }
+  }
+}
